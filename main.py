@@ -1,4 +1,5 @@
 from encryption import encryption
+from decryption import decryption
 
 print("Polybiova šifra")
 run = True
@@ -16,7 +17,12 @@ while(run):
             word = input("Zadej slovo k zašifrování: ")
             print(f"Zašifrované slovo: {encryption(word)}")
         case 2:
-            print("to be implemented")
+            option = input("Chceš dešifrovat předchozí slovo? ano/ne")
+            if option == ("ano" or "a"):
+                cipher = encryption(word)
+            else:
+                cipher = input("Zadej zašifrované slovo k dešifrování: ")
+            print(f"Dešifrované slovo: {decryption(cipher)}")
         case 3:
             run = False
 
