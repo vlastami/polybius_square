@@ -13,4 +13,4 @@ def get_key(val):
     for key, value in a.alphabet.items():
         if val == value:
             return key
-    return "Not a valid input"
+    raise KeyError
