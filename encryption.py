@@ -1,5 +1,6 @@
 import alphabet as a
 
+
 def encryption(word):
     new_word = ""
     for letter in word:
@@ -13,8 +14,7 @@ def encryption(word):
             replace("á", "a"). \
             replace("í", "i"). \
             replace("ů", "u"). \
-            replace("ú", "u"). \
-            replace("w", "vv")
+            replace("ú", "u")
 
         new_word += a.alphabet[letter] + " "
 
